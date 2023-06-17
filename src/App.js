@@ -64,20 +64,20 @@ function App() {
         <Legend />
         <Bar dataKey="totalValue" fill="#8884d8" minPointSize={5} />
       </BarChart>
-      <table style={{ width: '100%', tableLayout: 'fixed' }}>
+      <table>
         <thead>
           <tr>
-            <th style={{ padding: '0 5px' }}>Name</th>
-            <th style={{ padding: '0 5px', textAlign: 'right' }}>Total Value</th>
-            <th style={{ padding: '0 5px', textAlign: 'right' }}>Percent (%)</th>
+            <th>Name</th>
+            <th>Total Value</th>
+            <th>Percent (%)</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item, index) => (
             <tr key={index}>
-              <td style={{ padding: '0 5px' }}>{item.name}</td>
-              <td style={{ padding: '0 5px', textAlign: 'right' }}>{item.totalValue}</td>
-              <td style={{ padding: '0 5px', textAlign: 'right' }}>{item.percent.toFixed(2)}</td>
+              <td>{item.name}</td>
+              <td>{item.totalValue}</td>
+              <td>{item.percent.toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
