@@ -7,7 +7,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://lobby.cash/api/gaugeRewards/cvx/all/1686182400')
+    axios.get('https://lobby.page/api/gaugeRewards/cvx/all/1686182400')
       .then(res => {
         let totalValue = 0;
         const tempData = Object.entries(res.data.data.gaugeRewards).map(([key, value]) => {
